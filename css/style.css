@@ -11,27 +11,85 @@ a {
 
 img {
   max-width: 100%;
-  border-radius: 0.5rem;
-}
-
-.section1 {
-  background-color: #eee4fa;
-  padding-bottom: 1rem;
 }
 
 .container {
   width: 100%;
-  max-width: calc(1110px + 2rem);
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  background: #c4c4c4;
 }
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #f9f5ff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.17;
+  color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1000px;
+  background: #e6e6e6;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.box {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: #fc8f8f;
+}
+
+.box-2 {
+  float: right;
+}
+
+p {
+  text-align: center;
+  padding-top: 62px;
+  padding-right: 62px;
+  padding-left: 50px;
+}
+
+.box-small {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #fc8f8f;
+}
+
+.box-small p {
+  font-size: 36px;
+  line-height: 1.16;
+  padding: 31px;
+}
+
+.right-small {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.left .box {
+  margin-right: 15px;
+}
+
+.righr {
+  float: right;
+}
+
+.righr .box {
+  margin-left: 15px;
+}
+
+.square {
+  padding: 50px 50px 1px;
 }
