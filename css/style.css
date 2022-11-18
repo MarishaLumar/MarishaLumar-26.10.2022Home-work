@@ -93,3 +93,7 @@ p {
 .square {
   padding: 50px 50px 1px;
 }
+
+.clearfix {
+  clear: both;
+}
