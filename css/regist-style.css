@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: calc(1110px + 2rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #4b3203;
+  background-color: #f6f6f6;
+}
+
+button {
+  padding: 10px 25px;
+  background-color: #4b0411;
+  color: #f6f6f6;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+img {
+  max-width: 1rem;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #544c4c;
+}
+
+.user_name input {
+  margin-left: 100px;
+}
+
+.user_surname input {
+  margin-left: 76px;
+}
+
+.dob input {
+  margin-left: 160px;
+}
+
+.user_ege input {
+  margin-left: 55px;
+}
+
+.number input {
+  margin-left: 30px;
+}
+
+.email input {
+  margin-left: 100px;
+}
+
+.password input {
+  margin-left: 67px;
+}
+
+.repeat_password input {
+  margin-left: 47px;
+}
+
+.county select {
+  margin-left: 110px;
+}

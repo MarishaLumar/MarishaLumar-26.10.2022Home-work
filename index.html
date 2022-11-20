@@ -5,11 +5,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>avto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container nav">
+            <img class="logo" src="./images/car.png" alt="car">
+            <nav class="navbar">
+                <a class="nav-link" href="#">Автомобілі б.у</a>
+                <a class="nav-link" href="#">Нові авто</a>
+                <a class="nav-link" href="#">Новини</a>
+                <a class="nav-link" href="#">Все для авто</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <form action="https://fom.in.ua/echo" method="post">
+                <nav class="type-transport">
+                    <h2>Пошук Автомобіля</h2>
+                    <label for="auto_type">Тип транспорту:</label>
+                    <select name="auto_type" id="auto_type">
+                        <option value="cars">Легкові</option>
+                        <option value="moto">Мото</option>
+                        <option value="trucks">Вантажівки </option>
+                        <option value="trailers">Причепи </option>
+                        <option value="special_equipment">Спецтехніка</option>
+                        <option value="agricultural_machinery">Сільгосптехніка</option>
+                        <option value="buses">Автобуси</option>
+                        <option value="water_transport">Водний транспорт</option>
+                        <option value="air_yransport">Повітряний транспорт </option>
+                        <option value="auto_at_home">Авто дома</option>
+                    </select>
+                </nav>
+                <nav class="cab">
+                    <h2>Тип кузова:</h2>
+                    <input type="checkbox" name="station_wagon" id="station_wagon" value="station_wagon">
+                    <label for="station_wagon">Універсал</label>
+
+                    <input type="checkbox" name="sedan" id="sedan" value="sedan">
+                    <label for="sedan">Седан</label>
+
+                    <input type="checkbox" name="hatchback" id="hatchback" value="hatchback">
+                    <label for="hatchback">Хетчбек</label>
+                    <br>
+                    <input type="checkbox" name="crossover" id="crossover" value="crossover">
+                    <label for="crossover">Кросовер</label>
+
+                    <input type="checkbox" name="coupe" id="coupe" value="coupe">
+                    <label for="coupe">Купе:</label>
+
+                    <input type="checkbox" name="cabriolet" id="cabriolet" value="cabriolet">
+                    <label for="cabriolet">Кабріолет</label>
+                </nav>
+
+                <nav class="producing-country">
+                    <h2>Країна виробник</h2>
+                    <label for="country_manufacturer">Країна:</label>
+                    <select name="country_manufacturer" id="country_manufacturer">
+                        <option value="aus">Австралія</option>
+                        <option value="bel">Бельгія</option>
+                        <option value="bgr">Болгарія</option>
+                        <option value="deu">Німеччина </option>
+                        <option value="grc">Греція</option>
+                        <option value="geo">Грузія</option>
+                        <option value="dnk">Данія</option>
+                        <option value="isr">Израиль</option>
+                        <option value="esp">Іспанія</option>
+                        <option value="chn">Китай</option>
+                        <option value="jpn">Японія</option>
+                    </select>
+                </nav>
+
+                <nav class="price">
+                    <label for="number">Ціна:</label>
+                    <input type="number" id="number" step="1" min="0" placeholder="10000"> $
+                </nav>
+
+                <nav class="year">
+                    <label for="production_year">Рік випуску :</label>
+                    <input type="date" id="production_year">
+                </nav>
+
+
+                <nav class="car-condition">
+                    <h2>Стан автомобіля:</h2>
+                    <input type="checkbox" name="broken" id="broken" value="broken">
+                    <label for="broken">Бита</label>
+
+                    <input type="checkbox" name="on_credit" id="on_credit" value="on_credit">
+                    <label for="on_credit">У кредиті</label>
+
+                    <input type="checkbox" name="uncleared" id="uncleared" value="uncleared">
+                    <label for="uncleared">Нерозмитнена</label>
+                    <br>
+                    <input type="checkbox" name="auto_from_usa" id="auto_from_usa" value="auto_from_usa">
+                    <label for="auto_from_usa">Авто зі США</label>
+
+                    <input type="checkbox" name="garage_storage" id="garage_storage" value="garage_storage">
+                    <label for="garage_storage">Гаражне зберігання</label>
+
+                    <input type="checkbox" name="first_owner" id="first_owner" value="first_owner">
+                    <label for="first_owner">Перший власник</label>
+                </nav>
+                <nav class="car-brand">
+                    <h2>Марка машини:</h2>
+                    <label for="auto_mark"></label>
+                    <select name="auto_mark" id="auto_mark">
+                        <option value="Auid">Auid</option>
+                        <option value="cura">Acura</option>
+                        <option value="Alfa Romeo ">Alfa Romeo </option>
+                        <option value="Bentley">Bentley </option>
+                        <option value="Byd">Byd</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Brilliance">Brilliance</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Hyundai">Hyundai </option>
+                        <option value="Chevrolet">Chevrolet</option>
+                    </select>
+                </nav>
+
+                <nav class="gearboxes">
+                    <h2>Тип коробки передач:</h2>
+                    <input type="radio" name="automaton" id="automaton" value="automaton">
+                    <label for="automaton">Автомат</label>
+
+                    <input type="radio" name="mechanics" id="mechanics" value="mechanics">
+                    <label for="mechanics">Механіка</label>
+
+                    <input type="radio" name="tiptronic" id="tiptronic" value="tiptronic">
+                    <label for="tiptronic">Типтронік</label>
+                </nav>
+                <nav class="color-avto">
+                    <h2>Вибір кольору автомобіля </h2>
+                    <label for="my_coLor">Кольор</label>
+                    <input type="color" name="color" value="#ff0000" id="my_coLor">
+                    <input class="btn" type="submit" value="Обрати">
+                </nav>
+                <nav class="fuel-type">
+                    <h2>Тип палива:</h2>
+                    <input type="radio" name="petrol" id="petrol" value="petrol">
+                    <label for="petrol">Бензин</label>
+
+                    <input type="radio" name="gas" id="gas" value="gas">
+                    <label for="gas">Газ</label>
+
+                    <input type="radio" name="hybrid" id="hybrid" value="hybrid">
+                    <label for="hybrid">Гибрид</label>
+
+                    <input type="radio" name="electro" id="electro" value="electro">
+                    <label for="electro">Електро</label>
+
+                    <input type="radio" name="diesel" id="diesel" value="diesel">
+                    <label for="diesel">Дізель</label>
+                </nav>
+                <nav class="comfort">
+                    <h2>Комфорт:</h2>
+                    <label for="comfort"></label>
+                    <select name="comfort" id="comfort">
+                        <option value="cars">Легкові</option>
+                        <option value="central_locking">Центральний замок</option>
+                        <option value="anti_theft_systems">Протиугінні системи </option>
+                        <option value="parking_system">Паркувальна система </option>
+                        <option value="heating_elements">Нагрівальні елементи </option>
+                        <option value="engine_control">Управління двигуном</option>
+                        <option value="autostart">Автозапуск</option>
+                        <option value="laser_headlights">Лазерні фари</option>
+                        <option value="climate_control_system">Система клімат-контролю </option>
+                        <option value="windshield_washer">Склоомивач</option>
+                    </select>
+                </nav>
+                <div class="batton">
+                    <input class="btn" type="submit" value="Пошук">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container ">
+            <div class="data-footer">
+                <h6> Україна 20.11.2022 рік </h6>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
