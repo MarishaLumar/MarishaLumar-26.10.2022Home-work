@@ -14,11 +14,6 @@ img {
   border-radius: 0.5rem;
 }
 
-.section1 {
-  background-color: #eee4fa;
-  padding-bottom: 1rem;
-}
-
 .container {
   width: 100%;
   max-width: calc(1110px + 2rem);
@@ -28,10 +23,36 @@ img {
   padding-right: 1rem;
 }
 
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #f9f5ff;
+table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid;
+}
+
+table table {
+  border: none;
+}
+
+th,
+td {
+  padding: 5px 8px;
+}
+
+td.inner {
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+}
+.yellow {
+  background-color: #e9f029;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+caption {
+  padding-top: 5px;
 }
