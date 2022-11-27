@@ -1,3 +1,10 @@
+:root {
+  --color-grey: #eeeff1;
+  --color-dark-grey: #727272;
+  --color-blue: #34547a;
+  --color-white: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +21,6 @@ img {
   border-radius: 0.5rem;
 }
 
-.section1 {
-  background-color: #eee4fa;
-  padding-bottom: 1rem;
-}
-
 .container {
   width: 100%;
   max-width: calc(1110px + 2rem);
@@ -30,8 +32,138 @@ img {
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
   font-weight: 400;
-  color: #f9f5ff;
+  font-size: 16px;
+  line-height: 1.64;
+  color: #000000;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 21px;
+  color: var(--color-white);
+}
+
+p {
+  color: var(--color-dark-grey);
+}
+
+/*----------------------------HEADER--------------------------------------------------------------------*/
+
+.header {
+  background-color: var(--color-grey);
+  padding-top: 79px;
+}
+
+.nav-list a {
+  margin-right: 42px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nav-list a:hover {
+  color: var(--color-blue);
+}
+/*---------------------------SECTION1------------------------------------------------------------------------------*/
+.section1 {
+  background-color: var(--color-grey);
+  padding-top: 151px;
+}
+h1 {
+  margin-bottom: 60px;
+}
+
+.section1 p {
+  max-width: 540px;
+  margin-bottom: 65px;
+}
+
+.btn {
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 225px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 20px;
+  background: var(--color-blue);
+  margin-bottom: 141px;
+}
+/*---------------------------SECTION2------------------------------------------------------------------------------*/
+h2 {
+  margin-bottom: 50px;
+}
+
+.section2 p {
+  padding-bottom: 100px;
+}
+
+.section2 {
+  margin-top: 112px;
+}
+
+.medium {
+  text-align: center;
+  max-width: 540px;
+  padding: 0;
+}
+/*---------------------------ICON-BLOK------------------------------------------------------------------------------*/
+.icons-blok {
+  background-color: var(--color-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.icon-text p {
+  color: var(--color-white);
+}
+
+.icon-holder {
+  display: inline-block;
+  width: 141px;
+  margin-right: 40px;
+}
+
+.icon-text,
+.icon-img {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.icon-text {
+  padding-left: 20px;
+}
+/*---------------------------SECTION3------------------------------------------------------------------------------*/
+.section3 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--color-grey);
+}
+
+.section3 p {
+  padding-bottom: 57px;
+}
+/*---------------------------FOOTER------------------------------------------------------------------------------*/
+.footer {
+  background-color: var(--color-blue);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer span {
+  font-size: 13px;
+  color: var(--color-white);
+  padding-top: 20px;
 }
