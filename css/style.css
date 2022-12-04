@@ -9,14 +9,14 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style-type: none;
+}
+
 img {
   max-width: 100%;
   border-radius: 0.5rem;
-}
-
-.section1 {
-  background-color: #eee4fa;
-  padding-bottom: 1rem;
 }
 
 .container {
@@ -30,8 +30,69 @@ img {
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
-  color: #f9f5ff;
+  color: #fefeff;
+  letter-spacing: 2px;
+}
+.nav-menu {
+  margin-top: 20px;
+  background-color: #161618;
+  border-bottom: 5px solid #30acff;
+}
+.main-menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-menu li:hover {
+  background: #30acff;
+}
+
+.main-menu a {
+  display: block;
+  padding: 20px 70px;
+  text-transform: uppercase;
+}
+
+.submenu {
+  position: absolute;
+  z-index: 1;
+  min-width: 350px;
+  background: #69bdf5;
+  border-top: 1px solid #448fe5;
+  border-left: 1px solid #448fe5;
+  border-right: 1px solid #448fe5;
+  visibility: hidden;
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+}
+
+.submenu li a {
+  border-bottom: 1px solid #448fe5;
+}
+
+nav li:hover > .submenu {
+  visibility: visible;
+}
+
+.submenu1 a {
+  text-transform: none;
+}
+
+.cell span {
+  padding-left: 30px;
+}
+
+.submenu a {
+  padding-top: 20px;
 }
