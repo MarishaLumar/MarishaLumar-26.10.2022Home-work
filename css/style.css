@@ -387,7 +387,7 @@ html {
   justify-content: space-between;
 }
 .square1-block8 {
-  background: url(/images/woomen4.jpg) no-repeat;
+  background: url(../images/woomen4.jpg) no-repeat;
   background-position: center;
   background-size: 110%;
 }
