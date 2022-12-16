@@ -378,6 +378,9 @@ html {
 .square-big {
   width: 40%;
   aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .block8 {
   display: flex;
@@ -390,13 +393,13 @@ html {
 }
 
 .square2-block8 {
-  background: url(/images/woomen3.jpg) no-repeat;
+  background: url(../images/woomen3.jpg) no-repeat;
   background-position: center;
   background-size: 110%;
 }
 
 .square3-block8 {
-  background: url(/images/woomen2.jpg) no-repeat;
+  background: url(../images/woomen2.jpg) no-repeat;
   background-position: center;
   background-size: 110%;
 }
@@ -407,9 +410,7 @@ html {
   border: 1px solid #ffffff;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 33%;
-  left: 33%;
+  justify-content: center;
 }
 .square-small p {
   color: #ffffff;
