@@ -6,6 +6,7 @@
   --color-brown: #dabc98;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-grey: #eeeeee;
 }
 
 * {
@@ -47,6 +48,11 @@ h3 {
 
 h4 {
   font-size: 30px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 35px;
   font-weight: 600;
 }
 
@@ -337,61 +343,298 @@ html {
   padding-right: 1.5rem;
 }
 
-.bloc2-section6 {
-  display: flex;
-  flex-direction: column;
-  max-width: 408px;
-  padding-right: 1.5rem;
-}
-.bloc3-section6 {
-  display: flex;
-  flex-direction: column;
-  max-width: 408px;
+.link-section6 {
+  text-decoration: underline;
 }
 
-.picture1-section6 {
+.Learn {
+  display: flex;
+  margin-top: 1.25rem;
+  text-decoration: underline;
+}
+
+.thumb {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.title-section6 {
   margin-bottom: 2rem;
 }
-
-.text1-section6 h4 {
-  margin-bottom: 1.7rem;
+/*-----------------------SEKTION7-----------------------------------------------------------------------*/
+.section7 {
+  background-color: var(--color-purple);
+}
+.blok1-sectoin7 {
+  display: flex;
+  flex-direction: column;
 }
 
-.text1-section6 a {
-  text-decoration: underline;
-}
-
-.text1-section6 p {
+.title-section7 {
+  max-width: 920px;
+  font-size: 30px;
   margin-bottom: 1.25rem;
 }
-.Learn {
-  text-decoration: underline;
+
+.revolut-logo {
+  max-width: 115px;
+  margin-top: 7px;
 }
 
-.picture2-section6 {
-  margin-bottom: 3.35rem;
+.wrap-section7 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.65rem;
+  padding-bottom: 5.2rem;
 }
 
-.text2-section6 h4 {
-  margin-bottom: 1.65rem;
+.picure-section7 {
+  display: flex;
+  max-width: 310px;
+  margin-right: 3rem;
+}
+/*-----------------------SEKTION8-----------------------------------------------------------------------*/
+
+.section8 {
+  background: var(--color-brown);
 }
 
-.text2-section6 p {
-  margin-bottom: 1.7rem;
+.wrap-section8 {
+  padding-top: 4rem;
+  padding-bottom: 4.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.text2-section6 a {
-  text-decoration: underline;
+.blok1-section8 {
+  max-width: 697px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pages-section8 {
+  margin-right: 3rem;
 }
 
-.picture3-section6 {
-  margin-bottom: 2.9rem;
+.title-section8 {
+  max-width: 461px;
+  text-align: center;
 }
 
-.text3-section6 h4 {
-  margin-bottom: 1.3rem;
+.vl {
+  border-left: 1px solid var(--color-black);
+  height: 186px;
+}
+.block2-section8 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.text3-section6 p {
+.logos-section8 {
+  display: flex;
+  margin-left: 3.5rem;
+  gap: 3.5rem;
+}
+
+.cake {
+  max-width: 176px;
+}
+
+/*-----------------------SEKTION9-----------------------------------------------------------------------*/
+.section9 {
+  padding-top: 8.25rem;
+  padding-bottom: 8.1rem;
+}
+
+.title-section9 h2 {
+  text-align: center;
+  max-width: 790px;
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.text-section9 p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.text-section9 {
+  max-width: 540px;
+}
+.title-section9 {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1.25rem;
+  align-items: center;
+}
+
+.wrap-section9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blok1-section9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn-section9 {
+  min-width: 193px;
+  padding: 1rem;
+  margin-top: 1.6rem;
+}
+/*-----------------------SEKTION10-----------------------------------------------------------------------*/
+
+.section10 {
+  background-color: var(--color-pink);
+}
+.wrap-section10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5.95rem;
+  padding-bottom: 8rem;
+}
+.text-section10 h2 {
+  max-width: 785px;
+  font-size: 65px;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.text-section10 p {
+  text-align: center;
+}
+
+.btn-section10 {
+  min-width: 160px;
+  padding: 1rem;
+  margin-top: 2.7rem;
+  background-color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+.btn-section10.btn:hover {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+/*-----------------------BLOK1-FOOTER-----------------------------------------------------------------------*/
+.blok1-footer {
+  background-color: var(--color-grey);
+}
+
+.title-blok1-footer {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.velo {
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.logo-footer {
+  max-width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.text-blok1-footer {
+  max-width: 290px;
+  margin-bottom: 0.75rem;
+}
+
+.read {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.aside1-blok1-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap-blok1-footer {
+  padding-top: 4.6rem;
+  padding-bottom: 4.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.blok1-nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 110px;
+  margin-left: 7rem;
+}
+
+.title-nav {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.blok1-nav a {
+  font-size: 15px;
+}
+.blok1-nav li {
+  margin-bottom: 0.75rem;
+}
+
+.blok2-footer-nav {
+  max-width: 170px;
+  margin-left: 5.65rem;
+}
+
+.blok3-footer-nav {
+  max-width: 160px;
+  margin-left: 2rem;
+}
+
+.blok4-footer-nav {
+  max-width: 180px;
+  margin-left: 3.1rem;
+}
+
+.blok1-nav li:last-child {
+  margin-bottom: 0;
+}
+/*-----------------------BLOK2-FOOTER2-----------------------------------------------------------------------*/
+.blok2-footer2 {
+  background-color: var(--color-grey);
+}
+.wrap-footer2 {
+  border-top: 1px solid var(--color-black);
+  padding-top: 2.5rem;
+  padding-bottom: 2.15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside1-footer2 {
+  display: flex;
+  align-items: center;
+}
+
+.lok {
+  max-width: 90px;
+  margin-right: 0.75rem;
+}
+
+.text-footer2 {
+  max-width: 300px;
+  font-size: 12px;
+}
+
+.text2-footer2 {
+  font-size: 12px;
 }
