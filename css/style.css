@@ -71,13 +71,13 @@ html {
   align-items: center;
   justify-content: flex-end;
   gap: 6px;
+  margin-bottom: 16px;
 }
 
 .second-menu ul {
   grid-area: second-menu;
   display: flex;
   justify-content: end;
-
   gap: 15px;
   color: var(--second-color);
 }
@@ -136,10 +136,12 @@ a.active-link {
   color: var(--fourth-color);
   margin-left: 14px;
 }
-
+.nav-menu1 {
+  padding: 5px 7px;
+}
 .nav-menu1 a:hover {
   background: var(--five-color);
-  padding: 5px 7px;
+  /* padding: 5px 7px; */
   border-radius: 8px;
   color: var(--fourth-color);
 }
@@ -244,12 +246,16 @@ a:hover {
   color: var(--fourth-color);
 }
 
-.range:hover svg path {
+.name-card:hover .range svg path {
   stroke: var(--third-color);
 }
 
-.range:hover svg circle {
+.name-card:hover .range svg circle {
   fill: var(--seventh-color);
+}
+
+.name-card:hover .link-neme {
+  color: var(--third-color);
 }
 
 .wrap-card {
