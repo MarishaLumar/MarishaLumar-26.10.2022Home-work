@@ -141,7 +141,6 @@ a.active-link {
 }
 .nav-menu1 a:hover {
   background: var(--five-color);
-  /* padding: 5px 7px; */
   border-radius: 8px;
   color: var(--fourth-color);
 }
