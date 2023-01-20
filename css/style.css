@@ -274,6 +274,7 @@ a:hover {
 }
 
 .logo-info {
+  max-width: max-content;
   display: flex;
   align-items: center;
   gap: 10px;
