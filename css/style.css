@@ -238,10 +238,6 @@ a.activ-len {
   text-transform: uppercase;
 }
 
-.adress {
-  max-width: 650px;
-}
-
 a:hover {
   color: var(--third-color);
 }
@@ -260,9 +256,11 @@ a:hover {
   margin: 30px 0;
 }
 
-p.mail-text {
+.mail-text {
   color: var(--second-color);
   margin-top: 15px;
+  font-size: 21px;
+  font-weight: 400;
 }
 
 .page-link {
@@ -299,6 +297,7 @@ textarea {
   font: inherit;
   font-weight: 400;
   padding-left: 15px;
+  outline: none;
 }
 
 textarea {
@@ -320,14 +319,9 @@ textarea:focus {
 
 input:invalid,
 textarea:invalid {
-  border: 1px solid #f0145a;
-  color: #f0145a;
+  border: 1px solid #ff0000;
+  color: #ff0000;
 }
-
-/* input:focus,
-input:invalid:focus {
-  border: 1px solid var(--second-color);
-} */
 
 .name,
 .number {
@@ -353,6 +347,14 @@ input:invalid:focus {
   border-radius: 12px;
   background: var(--second-color);
   border: none;
+}
+
+.btn-form:hover {
+  background: #0085ff;
+}
+
+.btn-form:active {
+  background: #006ccf;
 }
 
 /*--------------FOOTER---------------------------------------------*/
@@ -401,4 +403,8 @@ input:invalid:focus {
 .wrap-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.logos-link2:hover svg path {
+  fill: var(--third-color);
 }
