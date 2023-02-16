@@ -2,10 +2,10 @@
 @import url(../template/section-card.css);
 @import url(../template/logo-partners.css);
 @import url(../template/gradient_header.css);
-@import url(../template/footer.css);
 @import url(../template/publication_block.css);
 
 /*---------------------FIRST-SCREEN-----------------------------------------------------------*/
+
 .first-screen {
   min-height: 100vh;
   background: url(../image/Symbol.png) no-repeat center/contain;
@@ -96,6 +96,10 @@
   max-width: 860px;
   margin-left: 60px;
 }
+.link_circle_tabs:hover circle.red,
+.link_circle_tabs:hover path.red {
+  stroke: #f0145a;
+}
 /*--------------------teamSlider--------------------------------------------------------------*/
 .team_img {
   width: 400px;
@@ -164,4 +168,75 @@
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
   color: var(--second-color);
+}
+/*---------------------------------------*/
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--five-color);
+}
+
+.circle-footer {
+  background: var(--fourth-color);
+}
+
+.gen-footer {
+  display: flex;
+  /* align-items: center; */
+
+  gap: 10px;
+  margin-bottom: 23.5px;
+}
+
+.adress-footer {
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.geolocation {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--second-color);
+}
+
+.contakt-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-footer {
+  color: var(--second-color);
+}
+
+.llc {
+  font-weight: 400;
+  color: var(--fourth-color);
+}
+
+.tel-footer {
+  color: var(--primary-color);
+}
+
+.logos-link2:hover svg path {
+  fill: var(--third-color);
+}
+
+.wrap-footer {
+  display: grid;
+  grid-template-areas:
+    "gen-footer right-footer"
+    "contakt-footer contakt-footer";
+  justify-content: space-between;
+}
+
+.gen-footer {
+  grid-area: gen-footer;
+}
+.right-footer {
+  grid-area: right-footer;
+}
+
+.contakt-footer {
+  grid-area: contakt-footer;
 }

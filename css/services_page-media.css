@@ -1,0 +1,7 @@
+@media (max-width: 640px) {
+  .services_text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.22;
+  }
+}

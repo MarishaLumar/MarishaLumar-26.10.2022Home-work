@@ -1,0 +1,43 @@
+@import url(../component/color.css);
+@import url(../template/gradient_header.css);
+@import url(../template/section-card.css);
+@import url(../template/footer.css);
+@import url(../template/logo-partners.css);
+/*---------------HEADER--------------------------*/
+
+.logo-header {
+  grid-area: logo-header;
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.services_text {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+a.active-link {
+  color: var(--third-color);
+}
+
+.second-menu a.active-link::before {
+  content: "";
+  bottom: -2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--third-color);
+}
+
+.second-menu a:hover::before {
+  width: 100%;
+  background-color: var(--white-color);
+}
+
+/*---------------section-cards--------------------------*/
+.section-cards {
+  margin-top: 65px;
+}

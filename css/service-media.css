@@ -33,4 +33,8 @@
   .form-information {
     border-radius: 0;
   }
+
+  body.lock {
+    overflow: hidden;
+  }
 }

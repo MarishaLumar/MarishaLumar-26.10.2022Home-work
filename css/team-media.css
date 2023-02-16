@@ -1,0 +1,58 @@
+@media (max-width: 968px) {
+  .title {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .wrap-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .main {
+    padding-top: 30px;
+  }
+  .wrap-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .logo-header {
+    margin-bottom: 0;
+  }
+  .title {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .foto {
+    height: 300px;
+    border-radius: 12px;
+  }
+  .logo {
+    max-width: 69px;
+  }
+  .slash {
+    max-width: 11.6px;
+  }
+
+  .text-header {
+    font-size: 20px;
+  }
+
+  .title {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 30px;
+  }
+
+  .text-title {
+    font-size: 30px;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+}

@@ -7,6 +7,24 @@
 
 @media (max-width: 960px) {
   /*---------------------SECTION-TABS-----------------------------------------------------------*/
+  .wrap-footer {
+    display: grid;
+    grid-template-areas:
+      "gen-footer right-footer"
+      "contakt-footer contakt-footer";
+  }
+
+  .gen-footer {
+    grid-area: gen-footer;
+  }
+  .right-footer {
+    grid-area: right-footer;
+  }
+
+  .contakt-footer {
+    grid-area: contakt-footer;
+  }
+
   .nav-pills {
     display: flex;
     flex-direction: row;
@@ -111,7 +129,35 @@
   .title_team {
     font-size: 30px;
   }
+
   body.lock {
     overflow: hidden;
+  }
+}
+
+@media (max-width: 640px) {
+  /*----------------footer--------------------------------------------*/
+  .wrap-footer {
+    display: grid;
+    grid-template-areas:
+      "gen-footer "
+      "contakt-footer"
+      "right-footer";
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gen-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contakt-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
   }
 }
