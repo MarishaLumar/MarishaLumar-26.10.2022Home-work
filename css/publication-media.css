@@ -1,0 +1,233 @@
+@media (max-width: 1112px) {
+  .wrap-header {
+    display: grid;
+    grid-template-areas:
+      " first-menu"
+      "logo-header"
+      "second-menu";
+  }
+
+  .wrapp-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+  }
+
+  .first-menu {
+    justify-content: flex-start;
+    margin-bottom: 35px;
+  }
+
+  .nav-menu1 a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+
+  .logo-header {
+    margin-bottom: 30px;
+  }
+
+  .second-menu ul {
+    justify-content: flex-start;
+  }
+
+  .wrap-publication {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap-publication {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .wrap-header {
+    display: grid;
+    grid-template-areas:
+      " first-menu first-menu"
+      "logo-header burger-block";
+  }
+
+  .burger-ckeck {
+    grid-area: burger-ckeck;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .header {
+    padding-top: 0;
+  }
+  .adress-header {
+    display: none;
+  }
+  .logos-link {
+    display: none;
+  }
+
+  .first-menu {
+    justify-content: space-between;
+    padding: 12px 30px;
+    background-color: var(--five-color);
+    margin: 0 -30px 15px;
+  }
+
+  .check {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 3;
+    opacity: 0;
+    display: block;
+  }
+
+  .burger {
+    /* margin-top: 15px; */
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    padding: 0 7px;
+    z-index: 2;
+  }
+
+  .burger span {
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    transition: all 0.3s linear;
+    opacity: 1;
+  }
+
+  .check:active ~ .burger {
+    background-color: var(--sixth-color);
+    border-radius: 8px;
+  }
+
+  .burger span:first-child {
+    top: 10px;
+  }
+  .burger span:nth-child(2),
+  .burger span:nth-child(3) {
+    top: 15px;
+  }
+  .burger span:last-child {
+    top: 20px;
+  }
+  .second-menu {
+    padding: 40px 10px;
+    text-align: center;
+    background-color: rgb(50, 50, 100, 0.7);
+    position: fixed;
+    font-size: 24px;
+    inset: 0;
+    z-index: 1;
+    top: 100%;
+    transition: all 0.4s linear;
+  }
+
+  .second-menu ul {
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    gap: 15px;
+    padding: 1rem;
+    transition: all 0.4s linear;
+    border-radius: 12px;
+    height: 100%;
+    transform: translateY(100%);
+    padding-top: 65px;
+  }
+
+  .second-menu ul li {
+    background-color: var(--five-color);
+    border-radius: 12px;
+    padding: 7px 0;
+  }
+  .wrap-header {
+    position: relative;
+  }
+
+  .second-menu a::before {
+    content: none;
+  }
+  .second-menu a:hover::before {
+    background: none;
+  }
+
+  .second-menu a.active-link::before {
+    content: none;
+  }
+  .check:checked ~ .second-menu {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+  }
+
+  .check:checked ~ .second-menu ul li:active {
+    background-color: var(--sixth-color);
+  }
+
+  .check:checked ~ .second-menu ul {
+    transform: translateY(0%);
+  }
+  .check:checked ~ .burger span:first-child {
+    top: -10px;
+    opacity: 0;
+    background-color: var(--eighth-color);
+  }
+  .check:checked ~ .burger span:nth-child(2) {
+    transform: rotate(45deg);
+    background-color: var(--eighth-color);
+  }
+  .check:checked ~ .burger span:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: var(--eighth-color);
+  }
+
+  .check:checked ~ .burger span:last-child {
+    top: 40px;
+    opacity: 0;
+    background-color: var(--eighth-color);
+  }
+
+  .logo-header {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    max-width: 69px;
+  }
+  .slash {
+    max-width: 11.6px;
+  }
+
+  .text-header {
+    font-size: 20px;
+  }
+
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+  .buttom_toogle {
+    margin-top: 10px;
+  }
+}
