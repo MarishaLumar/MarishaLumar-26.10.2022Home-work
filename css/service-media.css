@@ -1,0 +1,36 @@
+@media (max-width: 1160px) {
+  .container-small {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container-small {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .services_text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.22;
+  }
+  .wrapp_services_area {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .title-form {
+    max-width: 273px;
+  }
+
+  .popup-wrapper {
+    padding: 0;
+  }
+  .form-information {
+    border-radius: 0;
+  }
+}

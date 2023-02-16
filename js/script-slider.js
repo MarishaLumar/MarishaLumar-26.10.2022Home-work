@@ -1,0 +1,3 @@
+$('#teamSlider').slick({
+    dots: true
+});

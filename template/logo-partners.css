@@ -1,0 +1,128 @@
+/*-----------------------LOGO-PARTNERS-------------------------------------------*/
+.titie-partners {
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.wrap-logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 60px;
+}
+
+.logo-img {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hillel {
+  background-color: var(--hillel-color);
+  border-radius: 12px 0 0 0;
+}
+
+.wannabiz {
+  background-color: var(--wannabiz-color);
+}
+
+.tapgerine {
+  background-color: var(--tapgerine-color);
+}
+
+.dlook {
+  background-color: var(--dlook-color);
+  border-radius: 0 12px 0 0;
+}
+
+.orangear {
+  background-color: var(--orangear-color);
+}
+
+.adtelligent {
+  background-color: var(--adtelligent-color);
+}
+
+.clickky {
+  background-color: var(--clickky-color);
+}
+
+.ecoleasing {
+  background-color: var(--ecoleasing-color);
+}
+
+.infatek {
+  background-color: var(--infratek-color);
+  border-radius: 0 0 0 12px;
+}
+
+.citipark {
+  background-color: var(--citipark-color);
+}
+
+.artprint {
+  background-color: var(--artprint-color);
+}
+
+.ultimate {
+  background-color: var(--black-color);
+  border-radius: 0 0 12px 0;
+}
+
+@media (max-width: 1440px) {
+  .container-big {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .hillel {
+    background-color: var(--hillel-color);
+    border-radius: 0;
+  }
+  .infatek {
+    background-color: var(--infratek-color);
+    border-radius: 0;
+  }
+
+  .dlook {
+    background-color: var(--dlook-color);
+    border-radius: 0;
+  }
+
+  .ultimate {
+    background-color: var(--black-color);
+    border-radius: 0;
+  }
+
+  .wrap-logo {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 960px) {
+  .wrap-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .wrap-logo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 720px;
+    overflow-y: auto;
+  }
+
+  .wrap-logo {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .wrap-logo::-webkit-scrollbar {
+    display: none;
+  }
+}

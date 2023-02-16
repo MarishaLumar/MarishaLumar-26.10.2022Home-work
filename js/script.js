@@ -1,3 +1,5 @@
+
+
 const burgerMenu = document.querySelector('.check'); 
 const body = document.querySelector('.body'); 
  
@@ -10,6 +12,9 @@ burgerMenu.addEventListener('change', function(event) {
     } 
 })
 
-$('#teamSlider').slick({
-    dots: true
-});
+
+
+
+
+
+

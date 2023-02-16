@@ -1,0 +1,33 @@
+@media (max-width: 1300px) {
+  .container-small {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 960px) {
+  .wrapp-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding-top: 39px;
+    padding-bottom: 30px;
+  }
+
+  .container-small {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .wrapp-info {
+    gap: 30px;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+}

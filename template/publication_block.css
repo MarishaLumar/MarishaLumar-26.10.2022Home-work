@@ -1,0 +1,123 @@
+/*--------------publication_block---------------------------------------------*/
+.publication_block {
+  background-color: var(--five-color);
+  padding-top: 30px;
+}
+
+.title_publication {
+  font-size: 38px;
+  line-height: 1.21;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+  margin-top: 14px;
+}
+
+.publication_card {
+  background-color: var(--white-color);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.publication_block_text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+}
+.publication_img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+.publication_subject {
+  color: var(--second-color);
+}
+
+.publication_subject:hover {
+  color: var(--third-color);
+}
+
+.publication_data {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+}
+
+.line_small {
+  height: 4px;
+  width: 100%;
+  background-color: var(--sixth-color);
+}
+
+.publication_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--black-color);
+}
+
+.wrap-publication {
+  display: grid;
+  grid-template-areas: "card_one card_two card_three";
+  gap: 30px;
+}
+.card_one {
+  grid-area: card_one;
+}
+
+.card_two {
+  grid-area: card_two;
+}
+
+.card_three {
+  grid-area: card_three;
+}
+
+.line_big {
+  height: 2px;
+  width: 100%;
+  background-color: var(--sixth-color);
+  margin-top: 30px;
+}
+
+.services {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.link-cards:hover svg path {
+  color: var(--third-color);
+  stroke: var(--third-color);
+}
+
+/*------------------MEDIA-----------------------------------------------*/
+
+@media (max-width: 960px) {
+  .wrap-publication {
+    display: grid;
+    grid-template-areas:
+      "card_one card_two"
+      "card_three card_three";
+    gap: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap-publication {
+    display: grid;
+    grid-template-areas:
+      "card_one "
+      "card_two"
+      "card_three";
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
